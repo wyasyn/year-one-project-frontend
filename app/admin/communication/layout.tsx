@@ -2,28 +2,29 @@ import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className=" px-4 py-[3rem] ">
-      <nav className=" mb-8 ">
-        <ul className=" flex gap-4 ">
+    <main className=" p-8 ">
+      <nav>
+        <ul className=" flex items-center gap-12 ">
           <li>
             <Link
               className="hover:text-foreground duration-300 ease-in-out"
-              href="/admin/events"
+              href="/admin/communication"
             >
-              All events
+              All
             </Link>
           </li>
+
           <li>
             <Link
               className="hover:text-foreground duration-300 ease-in-out"
-              href="/admin/events/add-event"
+              href="/admin/communication/add"
             >
-              Add Event
+              Add
             </Link>
           </li>
         </ul>
       </nav>
-      {children}
-    </div>
+      <section>{children}</section>
+    </main>
   );
 }

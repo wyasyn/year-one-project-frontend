@@ -122,14 +122,14 @@ const StudentChat: React.FC = () => {
       )}
 
       <form
-        className="flex backdrop-blur-sm py-2 px-3 border bg-secondary/50 rounded-full gap-2 fixed bottom-8 left-1/2 -translate-x-1/2 max-w-lg focus-within:border-accent w-[95%] z-50  "
+        className="flex py-2 px-3 border rounded-full gap-2 fixed bottom-8 left-1/2 -translate-x-1/2 max-w-lg w-[95%] z-50 bg-secondary/95 "
         onSubmit={handleSubmit}
       >
         <Input
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className=" outline-none border-none bg-transparent"
+          className=" outline-none border-none bg-transparent text-foreground"
           placeholder="Type inquiry here..."
           required
         />

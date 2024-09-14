@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Calendar, Cog } from "lucide-react";
+import { Calendar, FolderCog } from "lucide-react";
 import Link from "next/link";
 import DeleteUpcomingEvent from "../_components/delete-event";
 const apiUri = process.env.NEXT_PUBLIC_URI;
@@ -28,7 +28,7 @@ export default async function Event() {
             <h2 className=" text-foreground truncate flex items-center justify-between gap-4 ">
               {event.title}{" "}
               <Link href={`/admin/events/detail/${event.id}`}>
-                <Cog size={18} />
+                <FolderCog size={20} />
               </Link>
             </h2>
             <p className=" text-sm py-3">

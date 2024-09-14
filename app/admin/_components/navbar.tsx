@@ -14,10 +14,11 @@ const links = [
     name: "home",
     link: "/admin",
     icon: <HomeIcon size={18} />,
+    exact: true, // Ensure this is an exact match
   },
   {
     name: "Query",
-    link: "/admin/add-query",
+    link: "/admin/query",
     icon: <PlusIcon size={18} />,
   },
   {
@@ -27,10 +28,11 @@ const links = [
   },
   {
     name: "Info",
-    link: "/admin/important-info",
+    link: "/admin/communication",
     icon: <Info size={18} />,
   },
 ];
+
 export default function AdminNavbar() {
   return (
     <header>
